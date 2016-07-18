@@ -1,0 +1,11 @@
+{
+  "name": "@pospi/appcore",
+  "version": "0.0.0",
+  "description": "JS-based multiplatform application build & deployment system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "pospi",
+  "license": "MIT"
+}
