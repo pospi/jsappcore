@@ -12,7 +12,7 @@
 
 var md5 = require('md5');
 
-export default function handleWebpackModuleSymlinks(Compilation) {
+module.exports = function handleWebpackModuleSymlinks(Compilation) {
     Compilation.prototype.applyModuleIds = function() {
         this.modules.forEach(function(module) {
             if (module.id === null) {
@@ -20,4 +20,4 @@ export default function handleWebpackModuleSymlinks(Compilation) {
             }
         }, this);
     };
-}
+};

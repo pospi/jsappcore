@@ -9,11 +9,11 @@
 
 var Module = require('module');
 
-export default function setGlobalIncludePaths(globalModule) {
+module.exports = function setGlobalIncludePaths(globalModule) {
     var globalPaths = globalModule.paths;
     var oldPathHandler = Module._nodeModulePaths;
 
     Module._nodeModulePaths = function(from) {
       return oldPathHandler(from).concat(globalPaths);
     };
-}
+};

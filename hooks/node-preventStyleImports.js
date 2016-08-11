@@ -6,9 +6,9 @@
  * @since:   2016-07-18
  */
 
-export default function preventStyleImports() {
+module.exports = function preventStyleImports() {
     require.extensions['.scss'] = function(m, filename) {};
     require.extensions['.sass'] = function(m, filename) {};
     require.extensions['.less'] = function(m, filename) {};
     require.extensions['.css'] = function(m, filename) {};
-}
+};
